@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import "./App.css";
 import Flowchart from "flowchart-react";
 import { ConnectionData, NodeData } from "flowchart-react/dist/schema";
+import update from "immutability-helper";
 
 function App() {
   const [nodes, setNodes] = useState<NodeData[]>([
@@ -65,6 +66,39 @@ function App() {
       type: "pass",
     },
   ]);
+
+  const handleSVGDoubleClick = useCallback(
+    (event, zoom) => {
+      const point = {
+        x: event.nativeEvent.offsetX / zoom,
+        y: event.nativeEvent.offsetY / zoom,
+        id: +new Date(),
+      };
+      let nodeData: NodeData;
+      if (!nodes.find((item) => item.type === "start")) {
+        nodeData = {
+          type: "start",
+          name: "Start",
+          ...point,
+        };
+      } else if (!nodes.find((item) => item.type === "end")) {
+        nodeData = {
+          type: "end",
+          name: "End",
+          ...point,
+        };
+      } else {
+        nodeData = {
+          ...point,
+          name: "New",
+          type: "operation",
+        };
+      }
+      setNodes((prevState) => [...prevState, nodeData]);
+    },
+    [nodes]
+  );
+
   return (
     <div>
       <Flowchart
@@ -72,9 +106,45 @@ function App() {
           setNodes(nodes);
           setConns(connections);
         }}
-        style={{ width: 640, height: 480 }}
+        onConnectionDoubleClick={(conn) => {
+          console.log(conn);
+        }}
+        onNodeDoubleClick={(node) => {
+          setNodes((prevState) => {
+            return update(prevState, {
+              [prevState.findIndex((item) => item.id === node.id)]: {
+                name: {
+                  $set: prompt("Enter node name:", node.name) || "No name",
+                },
+              },
+            });
+          });
+        }}
+        readonly={false}
+        onMouseUp={(event, zoom) => {
+          // Drop something here
+        }}
+        onDoubleClick={handleSVGDoubleClick}
+        style={{ width: 800, height: 600, margin: 10 }}
         nodes={nodes}
         connections={conns}
+        render={(data) => {
+          if (data.type !== "operation") {
+            return undefined;
+          }
+          if (!data.approvers) {
+            return "无审核人";
+          }
+          let text;
+          for (let i = 0; i < data.approvers.length; i++) {
+            if (i > 0) {
+              text += "等...";
+              break;
+            }
+            text = data.approvers[i].name;
+          }
+          return text;
+        }}
       />
     </div>
   );

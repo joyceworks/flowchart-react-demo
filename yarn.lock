@@ -4208,10 +4208,10 @@ flatted@^3.1.0:
   resolved "https://registry.npmmirror.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-flowchart-react@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-2.2.2.tgz#c0df3cfcbd2426cd84a0fe3695e04a39e5a0ecc4"
-  integrity sha512-/y1mhNRN0kd+akr+ijOM34zG1PKCrYCVsywsM2SLK9csfYEkIyWEk+7Jys9TsW4jZ1eUyi+Y1sw3Ouw07D4Wxw==
+flowchart-react@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-2.3.0.tgz#ab9940753ba4e5da815e4b635f95cfe777b7884d"
+  integrity sha512-UBDmlOUvLBFpBRydexOQlDg9AjxW8D2uEoJSychJqoF/uWMsV9c1Zr8v8CQtdFD1Jlusf2Cl4IgNbtbt+SByZA==
   dependencies:
     eslint-plugin-react "^7.28.0"
 
@@ -4665,6 +4665,11 @@ immer@^9.0.7:
   version "9.0.12"
   resolved "https://registry.npmmirror.com/immer/-/immer-9.0.12.tgz#2d33ddf3ee1d247deab9d707ca472c8c942a0f20"
   integrity sha512-lk7UNmSbAukB5B6dh9fnh5D0bJTOFKxVg2cyJWTYrWRfhLrLMBquONcUs3aFq507hNoIZEDDh8lb8UtOizSMhA==
+
+immutability-helper@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/immutability-helper/-/immutability-helper-3.1.1.tgz#2b86b2286ed3b1241c9e23b7b21e0444f52f77b7"
+  integrity sha512-Q0QaXjPjwIju/28TsugCHNEASwoCcJSyJV3uO1sOIQGI0jKgm9f41Lvz0DZj3n46cNCyAZTsEYoY4C2bVRUzyQ==
 
 import-fresh@^3.0.0, import-fresh@^3.1.0, import-fresh@^3.2.1:
   version "3.3.0"

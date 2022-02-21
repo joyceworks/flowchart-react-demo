@@ -3821,7 +3821,7 @@ eslint-plugin-react-hooks@^4.3.0:
   resolved "https://registry.npmmirror.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.3.0.tgz#318dbf312e06fab1c835a4abef00121751ac1172"
   integrity sha512-XslZy0LnMn+84NEG9jSGR6eGqaZB3133L8xewQo3fQagbQuGt7a63gf+P1NGKZavEYEC3UXaWEAA/AqDkuN6xA==
 
-eslint-plugin-react@^7.27.1, eslint-plugin-react@^7.28.0:
+eslint-plugin-react@^7.27.1:
   version "7.28.0"
   resolved "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.28.0.tgz#8f3ff450677571a659ce76efc6d80b6a525adbdf"
   integrity sha512-IOlFIRHzWfEQQKcAD4iyYDndHwTQiCMcJVJjxempf203jnNLUnW34AXLrV33+nEXoifJE2ZEGmcjKPL8957eSw==
@@ -4208,12 +4208,10 @@ flatted@^3.1.0:
   resolved "https://registry.npmmirror.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-flowchart-react@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-2.3.0.tgz#ab9940753ba4e5da815e4b635f95cfe777b7884d"
-  integrity sha512-UBDmlOUvLBFpBRydexOQlDg9AjxW8D2uEoJSychJqoF/uWMsV9c1Zr8v8CQtdFD1Jlusf2Cl4IgNbtbt+SByZA==
-  dependencies:
-    eslint-plugin-react "^7.28.0"
+flowchart-react@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-3.0.0.tgz#1d34071d655a12edab1ceb50b7a695e74bf96d8d"
+  integrity sha512-9WfEenL6kgeN4LQm28ntQrHIkEe079DqR72XbynJB7L/C74MP3XLJL3rYLuuAHR2JIfbsNGhkvefAbDI2Ktb3g==
 
 follow-redirects@^1.0.0:
   version "1.14.8"

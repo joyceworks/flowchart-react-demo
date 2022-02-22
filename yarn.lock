@@ -4208,10 +4208,10 @@ flatted@^3.1.0:
   resolved "https://registry.npmmirror.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-flowchart-react@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-3.0.0.tgz#1d34071d655a12edab1ceb50b7a695e74bf96d8d"
-  integrity sha512-9WfEenL6kgeN4LQm28ntQrHIkEe079DqR72XbynJB7L/C74MP3XLJL3rYLuuAHR2JIfbsNGhkvefAbDI2Ktb3g==
+flowchart-react@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-3.1.0.tgz#578ffe38e3481bd7d7aae7b49a82d60524999aa6"
+  integrity sha512-NB3fn5miPgViV3MzbkIzgUePnW+X7/18JE3Mw2RkcahJpQqAwbutfpx2X324I6FngBZGkwxuV0jnl3uxC8tjFg==
 
 follow-redirects@^1.0.0:
   version "1.14.8"

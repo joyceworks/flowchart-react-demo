@@ -1,10 +1,8 @@
-import React, { useCallback, useState } from "react";
-import "./App.css";
+import React, { useState } from "react";
 import Flowchart from "flowchart-react";
 import { ConnectionData, NodeData } from "flowchart-react/dist/schema";
-import update from "immutability-helper";
 
-function App() {
+const App = () => {
   const [nodes, setNodes] = useState<NodeData[]>([
     {
       type: "start",
@@ -24,17 +22,17 @@ function App() {
       x: 330,
       y: 190,
       id: 1604410575428,
-      title: "New",
+      title: "Joyce",
       type: "operation",
-      content: "Joyce",
     },
     {
       x: 330,
       y: 300,
       id: 1604410591865,
-      title: "New",
+      title: () => {
+        return "No approver";
+      },
       type: "operation",
-      content: "No approver",
     },
   ]);
   const [conns, setConns] = useState<ConnectionData[]>([
@@ -70,11 +68,11 @@ function App() {
         setNodes(nodes);
         setConns(connections);
       }}
-      style={{ width: 800, height: 640 }}
+      style={{ width: 800, height: 600 }}
       nodes={nodes}
       connections={conns}
     />
   );
-}
+};
 
 export default App;

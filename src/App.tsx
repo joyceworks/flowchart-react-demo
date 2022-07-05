@@ -9,26 +9,26 @@ const App = () => {
       title: "Start",
       x: 50,
       y: 240,
-      id: 1604410569920,
+      id: 1,
     },
     {
       type: "end",
       title: "End",
       x: 570,
       y: 240,
-      id: 1604410572363,
+      id: 2,
     },
     {
       x: 400,
       y: 240,
-      id: 1604410575428,
+      id: 3,
       title: "Joyce",
       type: "operation",
     },
     {
       x: 230,
       y: 240,
-      id: 1604410591865,
+      id: 4,
       title: () => {
         return "Is leader";
       },
@@ -37,27 +37,23 @@ const App = () => {
   ]);
   const [conns, setConns] = useState<ConnectionData[]>([
     {
-      source: {id: 1604410569920, position: "right"},
-      destination: {id: 1604410591865, position: "left"},
-      id: 1604410587907,
+      source: {id: 1, position: "right"},
+      destination: {id: 4, position: "left"},
       type: "success",
     },
     {
-      source: {id: 1604410575428, position: "right"},
-      destination: {id: 1604410572363, position: "left"},
-      id: 1604410590524,
+      source: {id: 3, position: "right"},
+      destination: {id: 2, position: "left"},
       type: "success",
     },
     {
-      source: {id: 1604410591865, position: "right"},
-      destination: {id: 1604410575428, position: "left"},
-      id: 1604410590524,
+      source: {id: 4, position: "right"},
+      destination: {id: 3, position: "left"},
       type: "fail",
     },
     {
-      source: {id: 1604410591865, position: "bottom"},
-      destination: {id: 1604410572363, position: "bottom"},
-      id: 1604410590524,
+      source: {id: 4, position: "bottom"},
+      destination: {id: 2, position: "bottom"},
       type: "success",
     },
   ]);

@@ -4208,10 +4208,10 @@ flatted@^3.1.0:
   resolved "https://registry.npmmirror.com/flatted/-/flatted-3.2.5.tgz#76c8584f4fc843db64702a6bd04ab7a8bd666da3"
   integrity sha512-WIWGi2L3DyTUvUrwRKgGi9TwxQMUEqPOPQBVi71R96jZXJdFskXEmf54BoZaS1kknGODoIGASGEzBUYdyMCBJg==
 
-flowchart-react@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-3.4.0.tgz#2817aa9948b66ea406680f19970356e6f6931f24"
-  integrity sha512-L7G8pkCdfs+5GsN7wgApgQMxGFsxtKupz9TI2ZeJNFU1B4hNijO8ZaItChnPotJWt24kzfAlRdyLKdyy40z8DQ==
+flowchart-react@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.npmjs.org/flowchart-react/-/flowchart-react-3.6.0.tgz#d544da9a089ef90d90790a3fa624e60d865159c6"
+  integrity sha512-Wc1iWYQvl7vWfePCeI69XwBnV6GE1yeOWShouxv4XtqfDlOQGDO98J5VkYoIGUSb1NyeQe7b642If1stNa2D2w==
 
 follow-redirects@^1.0.0:
   version "1.14.8"
@@ -7100,14 +7100,6 @@ react-scripts@5.0.0:
     workbox-webpack-plugin "^6.4.1"
   optionalDependencies:
     fsevents "^2.3.2"
-
-react@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.npmmirror.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
-  integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 readable-stream@^2.0.1:
   version "2.3.7"
